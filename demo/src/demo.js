@@ -1,8 +1,10 @@
+import 'babel-polyfill'
 import {chooseImagemin} from "../../src/index";
 import React from 'react'
 import ReactDOM from 'react-dom'
 import './demo.less'
 import {regex,trim} from 'changlin-util'
+
 
 const container = document.createElement('div');
 document.body.appendChild(container);
