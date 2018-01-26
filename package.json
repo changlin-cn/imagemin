@@ -1,0 +1,56 @@
+{
+  "name": "imagemin-canvas",
+  "version": "0.0.0",
+  "description": "imagemin in browser",
+  "main": "commonjs/index.js",
+  "scripts": {
+    "build": "npm run build:commonjs",
+    "build:commonjs": "babel src -d commonjs",
+    "build:demo": "webpack",
+    "pb": "npm run build  && npm publish",
+    "start": "webpack-dev-server --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/changlin-cn/imagemin.git"
+  },
+  "keywords": [
+    "imagemin"
+  ],
+  "author": "changlin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/changlin-cn/imagemin/issues"
+  },
+  "homepage": "https://github.com/changlin-cn/imagemin#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.2.1",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "clean-webpack-plugin": "^0.1.17",
+    "css-loader": "^0.28.9",
+    "eslint": "^4.16.0",
+    "eslint-config-standard": "^11.0.0-beta.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "html-webpack-plugin": "^2.30.1",
+    "less": "^3.0.0-alpha.3",
+    "less-loader": "^4.0.5",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "style-loader": "^0.19.1",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.11.1",
+    "babel-preset-react": "^6.24.1"
+  },
+  "dependencies": {
+    "babel-runtime": "^6.26.0",
+    "changlin-util": "^2.5.2"
+  }
+}

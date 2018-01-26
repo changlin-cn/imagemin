@@ -1,0 +1,66 @@
+.demo{
+  color: #666;
+  font-size:14px;
+  line-height:1.5;
+  padding:10px;
+  header{
+    text-align: center;
+    h1{
+      color: #333;
+    }
+    p{
+     color: #ff0000;
+
+    }
+
+    
+  }
+  .config{
+    text-align: center;
+  }
+  .imageList{
+    margin-top:20px;
+    *zoom:1;
+    &:before,&:after{
+      content:" ";
+      display:table;
+    }
+    &:after{clear:both;}
+
+    li{
+      border-radius: 7px;
+      overflow: hidden;
+      float:left;
+      width:100px;
+      height:100px;
+      cursor: pointer;
+      text-align: center;
+      background: #fefefe;
+      margin-right:10px;
+      margin-top:10px;
+      position: relative;
+      .name{
+        position: absolute;
+        bottom:0;
+        left: 0;
+        line-height:1.5;
+        background:rgba(0,0,0,.5);
+        color: #fff;
+        text-align: center;
+        word-break: break-all;
+        width:100%;
+      }
+    }
+    .button{
+      background: #999999;
+      color: #fff;
+      font-size:22px;
+      font-weight:bold;
+      line-height:1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+  }
+}
