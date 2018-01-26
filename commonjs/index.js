@@ -154,7 +154,7 @@ function toDataURL(path, option) {
                 scale = w / h;
             w = option.width || w;
             h = option.height || w / scale;
-            var quality = option.quality || 0.7; // 默认图片质量为0.7
+            var quality = option.quality;
             var canvas = document.createElement('canvas');
             var ctx = canvas.getContext('2d');
             var anw = document.createAttribute("width"),

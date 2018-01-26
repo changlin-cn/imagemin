@@ -82,7 +82,7 @@ function toDataURL(path, option) {
                 scale = w / h;
             w = option.width || w;
             h = option.height || (w / scale);
-            const quality = option.quality || 0.7;  // 默认图片质量为0.7
+            const quality = option.quality;
             const canvas = document.createElement('canvas');
             const ctx = canvas.getContext('2d');
             const anw = document.createAttribute("width"),
