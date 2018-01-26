@@ -53,6 +53,20 @@ module.exports = {
                 verbose: true,
                 dry: false
             }),
+            new webpack.optimize.UglifyJsPlugin({
+                beautify: false,
+                comments: false,
+                compress: {
+                    warnings: false,
+                    drop_console: true,
+                    collapse_vars: true,
+                    reduce_vars: true,
+                    drop_debugger: true,
+                },
+                output: {
+                    comments: false,
+                },
+            })
         ],
     devServer: {
         host: '192.168.98.152'
