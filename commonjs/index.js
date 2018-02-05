@@ -30,7 +30,7 @@ var chooseImagemin = exports.chooseImagemin = function () {
                 switch (_context.prev = _context.next) {
                     case 0:
                         defaultOption = {
-                            quality: .7,
+                            quality: .75,
                             width: void 0,
                             height: void 0,
                             url: void 0
@@ -109,9 +109,20 @@ var chooseImagemin = exports.chooseImagemin = function () {
     };
 }();
 
+exports.canvasSupport = canvasSupport;
+exports.fileReaderSupport = fileReaderSupport;
+
 var _changlinUtil = require('changlin-util');
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function canvasSupport() {
+    return typeof document.createElement('canvas').getContext === "function";
+}
+
+function fileReaderSupport() {
+    return typeof FileReader === "function";
+}
 
 function chooseImage() {
     return new _promise2.default(function (resolve, reject) {
