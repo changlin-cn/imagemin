@@ -1,6 +1,6 @@
 {
   "name": "imagemin-canvas",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "imagemin in browser",
   "main": "commonjs/index.js",
   "scripts": {

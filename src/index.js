@@ -1,8 +1,17 @@
 import {extend, isObject, isString} from 'changlin-util'
 
+export function canvasSupport() {
+    return typeof document.createElement('canvas').getContext === "function"
+}
+
+export function fileReaderSupport() {
+    return typeof FileReader === "function"
+}
+
+
 export async function chooseImagemin(option) {
     const defaultOption = {
-        quality: .7,
+        quality: .75,
         width: void(0),
         height: void(0),
         url: void(0)
